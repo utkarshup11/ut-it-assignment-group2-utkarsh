@@ -1,6 +1,5 @@
 package ques2
 
-import org.agrona.collections.NullReference
 import org.scalatest.flatspec.AnyFlatSpec
 
 import java.lang.annotation.AnnotationTypeMismatchException
@@ -49,6 +48,11 @@ class TestPalindrome extends AnyFlatSpec with CheckPalindrome {
     {
       assert(isPalindrome(0))
     }
+
+  "a number " should "not be palindrome" in
+  {
+    assert(!isPalindrome(12123))
+  }
 
 
 

@@ -5,9 +5,10 @@ scalaVersion := "2.12.12"
 
 lazy val module1 = project.in(file("module1-for-ques1and2"))
   .settings(
-    libraryDependencies += 
+    libraryDependencies +=
 
-    "org.scalatest" %% "scalatest" % "3.3.0-SNAP3" % Test	
+    "org.scalatest" %% "scalatest" % "3.3.0-SNAP3" % Test
+
 )
 
   lazy val module2 = project.in(file("module2-for-ques3"))

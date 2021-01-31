@@ -8,7 +8,7 @@ class TestPassword extends AnyFlatSpec {
   var passwordValidator = new PasswordValidator()
 
   "password " should "not contain any space " in {
-    assert(passwordValidator.isValidPassword("Hello123@"))
+    assert( ! passwordValidator.isValidPassword("Hell o123@"))
   }
 
   "password " should "contain at least one digit from 0 to 9 " in {
